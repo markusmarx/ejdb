@@ -108,3 +108,9 @@ compilation.db
 .clang/
 ejdb.workspace.session
 .codelite/
+
+tcejdb/ejdb.creator
+tcejdb/ejdb.config
+tcejdb/ejdb.creator.user
+tcejdb/ejdb.creator.user.3.2-pre1
+tcejdb/ejdb.files
