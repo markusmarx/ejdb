@@ -5345,10 +5345,11 @@ static bool _createcoldb(const char *colname, EJDB *jb, EJCOLLOPTS *opts, TCTDB 
             tflags |= TDBTLARGE;
         }
         if (opts->compressed) {
-            tflags |= TDBTDEFLATE;
+            tflags |= TDBTBZIP;
         }
         tctdbtune(cdb, bnum, 0, 0, tflags);
     }
+
     const char *mdbpath = jb->metadb->hdb->path;
     assert(mdbpath);
     TCXSTR *cxpath = tcxstrnew2(mdbpath);
