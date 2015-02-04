@@ -1,8 +1,8 @@
 Precompiled windows binaries
 =========================================
 
-* [tcejdb-1.1.25-mingw32-i686](https://dl.dropboxusercontent.com/u/4709222/ejdb/tcejdb-1.1.25-mingw32-i686.zip)
-* [tcejdb-1.1.25-mingw32-x86_64](https://dl.dropboxusercontent.com/u/4709222/ejdb/tcejdb-1.1.25-mingw32-x86_64.zip)
+* [tcejdb-1.1.26-mingw32-i686](https://dl.dropboxusercontent.com/u/4709222/ejdb/tcejdb-1.1.26-mingw32-i686.zip)
+* [tcejdb-1.1.26-mingw32-x86_64](https://dl.dropboxusercontent.com/u/4709222/ejdb/tcejdb-1.1.26-mingw32-x86_64.zip)
 
 **[Installing EJDB NodeJS win32 module](#ejdb-nodejs-module-installation)**
 
@@ -32,7 +32,7 @@ Creating build environment
 You need to checkout specific branch of [MXE cross build environmen](http://mxe.cc/)
 to build win32 and win64 binaries:
 
-    git clone https://github.com/tonytheodore/mxe.git
+    git clone https://github.com/mxe/mxe.git
     git checkout multi-rebase
 
 Then create MXE settings file:

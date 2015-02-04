@@ -10,7 +10,7 @@ test -n "$CPPFLAGS" && MYCPPFLAGS="$CPPFLAGS $MYCPPFLAGS"
 test -n "$LDFLAGS" && MYLDFLAGS="$LDFLAGS $MYLDFLAGS"
 
 # Package name
-AC_INIT(tcejdb, 1.1.25)
+AC_INIT(tcejdb, 1.1.26)
 AC_CANONICAL_HOST
 
 # Package information
@@ -20,7 +20,7 @@ MYFORMATVER="1.0"
 
 # Targets
 MYHEADERFILES="tcutil.h tchdb.h tcbdb.h tcfdb.h tctdb.h tcadb.h ejdb.h ejdb_private.h bson.h myconf.h basedefs.h"
-MYLIBRARYFILES="libtcejdb.a"
+MYLIBRARYFILES=""
 
 MYLIBOBJFILES="tcutil.o tchdb.o tcbdb.o tcfdb.o tctdb.o tcadb.o myconf.o md5.o ejdb.o \
 bson.o numbers.o encoding.o utf8proc.o ejdbutl.o platform.o nxjson.o"
@@ -331,6 +331,11 @@ case $host_os in
       ;;
 esac
 
+# Static libraries
+if test "$enable_static" != "no"
+then
+MYLIBRARYFILES="$MYLIBRARYFILES libtcejdb.a"
+fi
 
 # Shared libraries
 if test "$enable_shared" != "no" && test "$enable_profile" != "yes"
