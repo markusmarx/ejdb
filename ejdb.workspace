@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="ejdb" Database="./ejdb.tags">
-  <Project Name="tcejdb" Path="tcejdb/tcejdb.project" Active="Yes"/>
   <Environment>
     <![CDATA[]]>
   </Environment>
+  <Project Name="ejdb" Path="ejdb.project" Active="Yes"/>
   <BuildMatrix>
-    <WorkspaceConfiguration Name="Debug" Selected="yes">
-      <Project Name="tcejdb" ConfigName="Debug"/>
+    <WorkspaceConfiguration Name="win64-dbg" Selected="no">
+      <Project Name="ejdb" ConfigName="win64-dbg"/>
     </WorkspaceConfiguration>
-    <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="tcejdb" ConfigName="Release"/>
+    <WorkspaceConfiguration Name="nix-dbg" Selected="yes">
+      <Project Name="ejdb" ConfigName="nix-dbg"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
