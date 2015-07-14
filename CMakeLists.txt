@@ -3,7 +3,6 @@ cmake_minimum_required(VERSION 2.6)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/cmake/Modules/")
 set(DEB_CHANGELOG_REQUIRED ON)
-include(DebChangelog)
 
 set(PROJECT_NAME "ejdb")
 set(PROJECT_VENDOR "Softmotions")
@@ -17,6 +16,7 @@ set(PROJECT_PPA_USER "adamansky")
 set(PROJECT_PPA_DISTRIB_TARGET vivid utopic trusty precise)
 
 project(${PROJECT_NAME} C)
+include(DebChangelog)
 
 set(PROJECT_VERSION_MAJOR ${CHANGELOG_LAST_VERSION_MAJOR})
 set(PROJECT_VERSION_MINOR ${CHANGELOG_LAST_VERSION_MINOR})

@@ -8,7 +8,7 @@
 # CHANGELOG_LAST_MESSAGE - Last changelog description
 
 if (NOT DEB_CHANGELOG)
-   set(DEB_CHANGELOG "${CMAKE_SOURCE_DIR}/Changelog")
+   set(DEB_CHANGELOG "${PROJECT_SOURCE_DIR}/Changelog")
 endif()
 
 if (NOT EXISTS ${DEB_CHANGELOG}) 
