@@ -117,6 +117,7 @@ if (WIN32)
         endif()
         list(INSERT EJDB_LLIBRARIES 0 -lwinpthread -lpcreposix -lpcre)
         add_definitions(-DPCRE_STATIC)
+
     add_definitions(-D_POSIX_THREAD_SAFE_FUNCTIONS)
 
 else()
